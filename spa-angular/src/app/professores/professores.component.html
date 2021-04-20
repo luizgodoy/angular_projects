@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professores</title>
+</head>
+<body>
+    <h1>Professores</h1>
+    <table>
+        <tr>
+          <th>ID</th>
+          <th>Nome</th>
+        </tr>
+        <tr *ngFor="let professor  of listaProfessores">
+          <td>{{professor.id}}</td>
+          <td>{{professor.nome}}</td>
+        </tr>
+      </table>
+</body>
+</html>
