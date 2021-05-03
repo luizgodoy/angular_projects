@@ -20,6 +20,7 @@ export class CitiesService {
       .pipe(
         map(cities => {
           const search = new jsSearch.Search('geonameid');
+          search.addIndex('subcountry');
           search.addIndex('country');
           search.addIndex('name');
           search.addDocuments(cities);

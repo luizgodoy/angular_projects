@@ -31,6 +31,7 @@ export class BookmarksEffects {
               bookmark.coord = cityWeather.city.coord;
               bookmark.name = cityWeather.city.name;
               bookmark.country = cityWeather.city.country;
+              bookmark.subcountry = cityWeather.city.subcountry;
               return [...bookmarks, bookmark];
             }),
           );
